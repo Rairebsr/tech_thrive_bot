@@ -82,6 +82,9 @@ Visit **http://127.0.0.1:5000** in your browser to chat with Ritonix!
     Fidha Naisam-S6 CSE
     Raina Susan Ranjith-S6 CSE
     Emy Ann Ninan-S6 EEE
+
+
+    
 #REFERENCES
    OPENAI
    GEMINI API
