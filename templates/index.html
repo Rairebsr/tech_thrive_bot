@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>College Chatbot</title>
+    <title>RITONIX</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-    <script src="{{ url_for('static', filename='script.js') }}"></script
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
 </head>
 <body>
 
     <div class="chat-container">
-        <h2>College Chatbot 🤖</h2>
+        <h2>RITONIX-CHATBOT 🤖</h2>
 
         <div id="chatbox" class="chatbox"></div>
 
@@ -18,6 +19,25 @@
             <input id="userInput" type="text" placeholder="Type a message...">
             <button onclick="sendMessage()">Send</button>
         </div>
+    </div>
+    <div class="top-left-container">
+        <div class="points-display">
+            <span class="coin-symbol">🪙</span>
+            <span id="points">{{coins}}</span> points
+        </div>
+    </div>
+
+    <div class="top-right-corner">
+        <div id="g_id_onload"
+        data-client_id="9075085989-rravp2an16db0s07r9mgrkllmpjnifgj.apps.googleusercontent.com"
+        data-callback="handleCredentialResponse"
+        data-auto_prompt="false">
+        </div>
+    </div>
+
+    <div class="g_id_signin"
+        data-type="standard"
+        data-size="large">
     </div>
 
     <script>
