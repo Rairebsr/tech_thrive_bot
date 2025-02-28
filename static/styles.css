@@ -1,0 +1,192 @@
+/* General Styles */
+body {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Chat Container */
+.chat-container {
+  background-color: #2c2c2c;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  max-width: 90%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chat-container h2 {
+  color: #00ffcc;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Chatbox */
+#chatbox {
+  background-color: #3d3d3d;
+  border-radius: 10px;
+  padding: 15px;
+  width: 100%;
+  height: 300px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+  border: 1px solid #444;
+}
+
+/* Messages */
+.message {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.user-message {
+  background-color: #00ffcc;
+  color: #1e1e1e;
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+.bot-message {
+  background-color: #444;
+  color: #ffffff;
+  align-self: flex-start;
+  margin-right: auto;
+}
+
+/* Input Container */
+.input-container {
+  display: flex;
+  width: 100%;
+}
+
+#userInput {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3d3d3d;
+  color: #ffffff;
+  margin-right: 10px;
+}
+
+#userInput::placeholder {
+  color: #888;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #00ffcc;
+  color: #1e1e1e;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #00e6b8;
+}
+
+/* Google Sign-In Button */
+.g_id_signin {
+  margin-top: 20px;
+}
+
+/* Scrollbar Styles */
+#chatbox::-webkit-scrollbar {
+  width: 8px;
+}
+
+#chatbox::-webkit-scrollbar-track {
+  background: #3d3d3d;
+  border-radius: 10px;
+}
+
+#chatbox::-webkit-scrollbar-thumb {
+  background: #00ffcc;
+  border-radius: 10px;
+}
+
+#chatbox::-webkit-scrollbar-thumb:hover {
+  background: #00e6b8;
+}
+/* Google Sign-In Page Styles */
+.signin-container {
+  top:20px;
+  left: 20px;
+}
+
+.signin-container h2 {
+  color: #00ffcc;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.g_id_signin {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  top: 20px;
+}
+/* Top-left container for Points */
+.top-left-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+/* Points display */
+.points-display {
+  background-color: #444;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.coin-symbol {
+  font-size: 18px;
+}
+
+/* Top-right container for Sign-In */
+.top-right-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+/* Google Sign-In button */
+.g_id_signin {
+  margin: 0;
+}
+
+/* Chat container */
+.chat-container {
+  background-color: #2c2c2c;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  max-width: 90%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 80px auto 0; /* Adjusted margin to accommodate top containers */
+}
+
+/* Rest of your existing styles */
