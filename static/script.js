@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let userInputField = document.getElementById("userInput");
   let chatbox = document.getElementById("chatbox");
 
-  // Listen for "Enter" key to send message
+  
   userInputField.addEventListener("keypress", function (event) {
       if (event.key === "Enter") {
           event.preventDefault();
@@ -10,17 +10,17 @@ document.addEventListener("DOMContentLoaded", function () {
       }
   });
 
-  // Function to send message
+  
   function sendMessage() {
       let userInput = userInputField.value.trim();
       if (userInput === "") return;
 
-      // Display user message
+      
       let userMessage = `<div class='message user-message'>${userInput}</div>`;
       chatbox.innerHTML += userMessage;
       chatbox.scrollTop = chatbox.scrollHeight;
 
-      // Send message to Flask backend
+      
       fetch("/chat", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -71,7 +71,6 @@ document.addEventListener("DOMContentLoaded", function () {
           const messageElement = document.createElement("div");
           messageElement.classList.add(sender);
           
-          // Wrap bus schedule response in <pre> for alignment
           if (message.includes("\n")) {
               messageElement.innerHTML = `<pre>${message}</pre>`;
           } else {
@@ -89,7 +88,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
             if (userInput === "") return;
 
-            // Display user message
             let userMessage = `<div class='message user-message'>${userInput}</div>`;
             chatbox.innerHTML += userMessage;
             chatbox.scrollTop = chatbox.scrollHeight;
